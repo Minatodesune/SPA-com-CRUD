@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body onload="Read()">
+    <style>
+        p {
+            text-align: center;
+        }
+    </style>
+    <header>
+        <nav>
+            <ul>
+                <li><a onclick="menu('home')" href="#">Prices</a></li>
+                <li><a onclick="menu('sobre')" href="#">About</a></li>
+                <li><a onclick="menu('serviços')" href="#">Services</a></li>
+                <li><a onClick="window.location.reload();" href="#">Make your order</a></li>
+                <li><a onclick="menu('contatos')" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="conteudo">
+        <section id="product">
+            <h1>Minatsu-arts</h1>
+            <br>
+            <h2> <i> Make your order!! (for the prices click on the Prices!!)</i></h2>
+            <div id="form">
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="text" id="email" placeholder="E-mail">
+            <select id="Art" name="Art">
+                <option value="Full body">Full body</option>
+                <option value="Head">Head</option>
+                <option value="Half body">Half body</option>
+                <option value="Landscape">Landscape</option>
+                <option value="Half body with background">Half body with background</option>
+                <option value="Lanscape with half body">Lanscape with half body</option>
+                <option value="Landscape with full body">Landscape with full body</option>
+                <option value="Vtuber">Vtuber</option>
+                <option value="PNGtuber">PNGtuber</option>
+                <option value="Chibi">Chibi</option>
+                <option value="Chibi with background and full body">Chibi with background and full body</option>
+                <option value="Chibi with background and half body">Chibi with background and half body</option>
+                <option value="Chibi with background and head">Chibi with background and head</option><br>
+            <input type="hidden" id="id">
+            <button id="salvar" onclick="Save(), alert('I will be contact you to make the budget!!!')">Salvar</button>
+        </div>
+    
+                <h2>Orders in queue</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>E-mail</th>
+                            <th>Art type</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dados">                
+                    </tbody>
+                </table>
+        </section>
+    </main>
+    <script src='main.js'></script>
+    <footer>
+        <p><a href="https://www.instagram.com/minatsu_arts_/" class="fa">-&#xf16d; Instagram</a></p> 
+        <p>-<a href="https://www.pixiv.net/en/users/59309722" class="ph ph-palette">Pixiv</a></p> 
+        <p><a href="https://www.twitch.tv/minatsu_ka/videos" class="fa">-&#xf1e8; twitch</a></p>
+    </footer>
+</body>
+</html>
+</body>
+</html>
